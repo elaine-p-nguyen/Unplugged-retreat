@@ -115,7 +115,7 @@ header {
   padding: 15px 0;
 }
 
- header .content-wrapper {
+header .content-wrapper {
    margin: 0;
    display: flex;
    justify-content: center;
@@ -123,8 +123,7 @@ header {
    flex-flow: row wrap;
  }
 
- header figure {
-   width: 60%;
+header figure {
    display: flex;
    justify-content: center;
    align-items: center;
@@ -305,13 +304,6 @@ aside {
 }
 
 
-
-
-
-
-
-
-
 /* ==========================================================================
    Helper classes
    ========================================================================== */
@@ -401,16 +393,137 @@ aside {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
-}
+   @media only screen and (min-width: 768px) {
+     /* ====================== Tablet style here ================== */
+      .content-wrapper {
+        width: 640px;
+        margin: 100px 0;
+      }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
-}
+      /*-- Header --*/
+      header {
+        justify-content: space-between;
+        padding: 33px 0;
+      }
+
+      header .content-wrapper {
+        justify-content: space-between;
+        width: 100%;
+      }
+
+      header nav {
+        padding-right: 20px;
+        width: 25%
+      }
+
+      header nav ul {
+        justify-content: space-between;
+      }
+
+      .header-divider {
+        display: none;
+      }
+
+      /*-- Footer --*/
+      footer .content-wrapper {
+        width: 65%;
+        margin: 100px 0;
+      }
+      .footer-content {
+        display: flex;
+        justify-content: space-between;
+        align-items:center;
+
+      }
+      footer .contact {
+        margin-bottom: 0;
+      }
+
+      .copyright {
+        width:100%;
+      }
+
+      /* ==========================================================================
+          Homepage
+        ========================================================================== */
+      
+        /*-- Aside --*/
+      aside .content-wrapper{
+        margin: 45px 0;
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row wrap;
+      }
+
+      aside .form-discription, aside .form {
+        width: 40%;
+        margin: 0;
+      }
+
+      /*-- Feature --*/
+      .feature article {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-flow: column wrap;
+        flex-basis: 50%;
+      }
+
+      .feature-item-description {
+        width: 50%;
+      }
+
+      /*-- Review --*/
+      .review article {
+        display: flex;
+        justify-content: space-between;
+      }
+      #real-review {
+        width: 60%;
+      }
+
+      /* ==========================================================================
+          About page
+        ========================================================================== */
+      .mission-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+      }
+      
+      .mission-content p{
+        width: 45%;
+      }
+
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+      }
+
+      .contact-section h2 {
+        width: 80%;
+      }
+
+       /* ==========================================================================
+          FAQ page
+        ========================================================================== */
+      .faq .content-wrapper {
+        justify-content: space-between;
+      }
+
+      .faq h2 {
+        width: 100%;
+      }
+
+      .faq-content {
+        flex-basis: 45%;
+      }
+
+
+   @media only screen and (min-width: 1200px) {
+    /* ====================== Desktop style here ================== */
+
+  }
 
 /* ==========================================================================
    Print styles.
