@@ -99,7 +99,7 @@ textarea {
    ========================================================================== */
 
 .content-wrapper {
-  width: 80%;
+  width: 90%;
   margin: 50px 0;
 }
 /*--------------------- Header-footer base style --------------------*/
@@ -263,6 +263,7 @@ aside {
   align-items: center;
   flex-flow: row wrap;
 }
+
 
 /*- General contact -*/
  .contact-section{
@@ -489,6 +490,7 @@ aside {
         display: flex;
         justify-content: space-between;
         align-items: center;
+        padding-top: 20px;
       }
       
       .mission-content p{
@@ -504,7 +506,7 @@ aside {
         width: 80%;
       }
 
-       /* ==========================================================================
+      /* ==========================================================================
           FAQ page
         ========================================================================== */
       .faq .content-wrapper {
@@ -522,8 +524,57 @@ aside {
 
    @media only screen and (min-width: 1200px) {
     /* ====================== Desktop style here ================== */
+    .content-wrapper {
+      width: 960px;
+    }
 
-  }
+    /* ==========================================================================
+       Homepage
+      ========================================================================== */
+
+    /*-- Hero area --*/
+    .hero-area h1 {
+      width: 65%;
+    }
+
+    /*-- Aside --*/
+    aside .content-wrapper {
+      justify-content: space-around;
+    }
+
+    aside .form, aside .form-discription {
+      width:30%;
+    }
+
+    /*-- Feature --*/
+    .feature h2 {
+      width: 95%;
+    }
+
+    .feature article {
+      flex-basis: 33%;
+    }
+
+    /*-- Review --*/
+    #real-review {
+      width: 40%;
+    }
+
+    /* ==========================================================================
+       About
+      ========================================================================== */
+    .mission h2, .contact-section h2 {
+      width: 95%;
+    }
+
+    /* ==========================================================================
+       FAQ
+      ========================================================================== */
+      .faq h2 {
+        width: 100%;
+      }
+      
+    }
 
 /* ==========================================================================
    Print styles.
