@@ -106,6 +106,7 @@ body {
   font-family: 'Open Sans', sans-serif;
   font-size: 1em;
   text-align: left;
+  color: #e2e3ed;
 }
 
 ul, ol {
@@ -133,6 +134,14 @@ p{
   line-height: 1.285;
 }
 
+img {
+  width: 100%;
+}
+
+figure {
+  margin 0;
+}
+
 address {
   font-style: normal;
 }
@@ -143,6 +152,7 @@ address {
 }
 /*--------------------- Header-footer base style --------------------*/
  header, footer {
+   background-color:#202322 ;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -183,6 +193,10 @@ header nav ul {
   width: 100%;
 }
 
+header nav ul li {
+  font-size: 1.125em;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -192,6 +206,7 @@ header nav ul {
 /*- Footer -*/
 footer{
   flex-direction: column;
+  text-align: center;
 }
 
 footer p {
@@ -235,14 +250,20 @@ footer .copyright {
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
+  background: url('../img/retreat-hero.jpg');
+  background-size: cover;
+  background-position: center;
 }
 
 .hero-area h1 {
-  font-size: 2em
-  padding:
+  font-size: 2em;
+  font-family: 'Poppins', Helvetica, Arial, san-serif;
+  font-weight: 500;
+  line-height: 1.2;
 }
 /*- Aside -*/
 aside {
+  background-color: #527158;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -253,7 +274,7 @@ aside .form {
   margin-top: 30px;
 }
 
-input [type=text] {
+input[type=text] {
   box-sizing: border-box;
   width: 100%;
   color: #2a423a;
@@ -261,8 +282,8 @@ input [type=text] {
   padding: 1em;
 }
 
-input [type=button] {
-  width: :100%;
+input[type=button] {
+  width: 100%;
   padding: 20px 0;
   margin-top: 20px;
   background-color: #2a423a;
@@ -277,6 +298,9 @@ input [type=button] {
 
 /*- Feature -*/
 .feature {
+  background: url('../img/feature-bgr.jpg');
+  background-size: cover;
+  background-position: center;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -304,6 +328,7 @@ input [type=button] {
 
 /*- Review -*/
 .review {
+  background-color: #2a423a ;
   display: flex;
   justify-content: center;
   flex-flow: row wrap;
@@ -311,6 +336,7 @@ input [type=button] {
 
 .review h2 {
   margin-bottom: 40px
+  linhe-height: 1;
 }
 
 .review h3 {
@@ -323,6 +349,7 @@ input [type=button] {
 
 /*- Mission -*/
 .mission {
+  background-color: #527158 ;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -332,6 +359,7 @@ input [type=button] {
 
 /*- General contact -*/
  .contact-section{
+   background-color: #2a423a;
    display: flex;
    justify-content: center;
    align-items: center;
@@ -347,6 +375,7 @@ input [type=button] {
     ========================================================================== */
 
 .faq {
+  background-color: #527158;;
   display: flex;
   justify-content: center;
   align-items: center;
