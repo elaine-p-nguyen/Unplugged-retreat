@@ -323,6 +323,12 @@ input[type=button] {
 
 .feature p {
   margin: 0;
+  text-align: center;
+}
+
+.feature i {
+  font-size: 3.75em;
+  margin-bottom: 40px;
 }
 
 .feature-items{
